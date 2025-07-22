@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: action/setup-python@v5 # is this specific syntax? using version 5 of python?
+        uses: actions/setup-python@v5 # is this specific syntax? using version 5 of python?
         with:
           python-version: '3.x'
 

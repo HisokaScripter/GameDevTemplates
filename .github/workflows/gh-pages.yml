@@ -1,9 +1,9 @@
 name: Deploy MkDocs site to GitHub Pages
 
-On:
-  Push:
+on:
+  push:
     branches:
-      - main #
+      - main # Main branch
 
 permissions:
   contents: write # this would be the permissions for what? I need to figure that out.

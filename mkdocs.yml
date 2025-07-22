@@ -1,7 +1,3 @@
-site_name: My Documentation Site  
-theme:  
-  name: material  
-
 site_name: This is a sitename for my first docs
 theme:
   name: material

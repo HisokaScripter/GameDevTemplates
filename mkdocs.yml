@@ -1,6 +1,7 @@
 site_name: This is a sitename for my first docs 2
 site_url: https://hisokascripter.github.io/GameDevTemplates/
 repo_url: https://github.com/HisokaScripter/GameDevTemplates
+edit_uri: edit/main/docs
 theme:
   name: material
 

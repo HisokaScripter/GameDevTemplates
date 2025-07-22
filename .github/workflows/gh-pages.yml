@@ -1,0 +1,31 @@
+name: Deploy MkDocs site to GitHub Pages
+
+On:
+  Push:
+    branches:
+      - main #
+
+permissions:
+  contents: write # this would be the permissions for what? I need to figure that out.
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # this seems like the container
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: action/setup-python@v5 # is this specific syntax? using version 5 of python?
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install mkdocs-material # this seems to be the command being run seems like bash?
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force # some sort of command? what is the gh syntax? Is this based on the container that this is running on where gh-deploy is a prebuilt script executable etc?
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
+        
